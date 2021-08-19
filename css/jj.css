@@ -1,0 +1,295 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Vidaloka&display=swap');
+
+
+html, body{
+    margin:0%;
+    padding:0%;
+	width:100%;
+	height:100vh;
+    background: #121212;
+     font-family:Vidaloka;
+}
+
+
+/* nav */
+#header{
+    overflow:hidden;
+}
+
+.header_nav{
+	height:100%;
+	width:70px;
+    background-color:#ffffff;
+    border: 1px solid #797880;
+    position:fixed;
+    z-index:1;
+    
+}
+
+
+.line{
+    position:absolute;
+    width:70px;
+    border:1px solid #797880;
+    top:65px;
+}
+
+.navp{
+    position: absolute;
+    width: 110px;
+    height: 21px;
+    bottom:120px;
+    left:-20px;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 21px;
+    color: #000000;
+    transform: rotate(-90deg);
+    white-space:nowrap;
+}
+
+header button{
+	position:absolute;
+	width:24px;
+	height:18px;
+	top:25px;
+	right:22px;
+	border:none;
+	background:none;
+	cursor:pointer; 
+	z-index:2;
+}
+
+header button span:first-child{
+    text-indent:-99999px;
+}
+
+header button span:nth-child(2){
+    margin:5px 0;
+}
+
+header button span{
+	border-radius:6px;
+	display:block;
+	width:24px;
+	height:3px;
+	background:#000;
+}
+
+header button.on span{
+    position:absolute; 
+    width:100%; 
+}
+
+header button.on span:nth-of-type(1){
+    transform:rotate(45deg);
+    
+}
+
+header button.on span:nth-of-type(2){
+    transform:rotate(-45deg);
+    margin:0;
+}
+
+header button.on span:nth-of-type(3){
+    display:none;
+}
+
+.nav{
+    display:none;
+	position:inherit;
+    background-color:white;
+    height:100%;
+    width:100%;
+	left:70px;
+    border:1px solid #797880;
+}
+
+ nav li:after{
+    content:""; 
+    display:block; 
+    clear:both;
+}
+
+.nav li a{
+    text-decoration:none;
+    color:black;
+    font-family:Vidaloka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 120px;
+}
+
+.nav li:nth-of-type(1){
+margin-top:50px;
+}
+
+.nav li{
+    text-align:left;  
+    margin-left: 80px;
+}
+
+.nav li:hover a{
+     color:#79BCB5;
+     text-decoration:none;
+}
+
+
+
+
+
+/* loading-screen */
+.loading-screen{
+    position:absolute;
+    margin:0%;
+    padding:0%;
+    width: 100%;
+    height: 0vh;
+    z-index: 2;
+    bacground: #0f0f0f;
+}
+
+.loading-screen .intro{
+    position:absolute;
+    top:48%;
+    left:50%:
+    trasform: translate(-50%, -50%);
+    text-align:center;
+}
+
+.loading-screen .intro h1{
+    font-weight:300;
+    color:#fff;
+}
+
+.intro-title .letter{
+    display: inline-block;
+    line-height: 1em;
+}
+
+
+
+
+.bg{
+    width:1000px;
+    margin:-200px 0 0 400px;
+    position:absolute;
+}
+
+
+
+@media screen and (max-height:670px){
+.nav li a{font-size:110px;}
+}
+
+
+@media screen and (max-width:1024px){
+.nav li{
+    margin-left:40px;}
+
+.nav li a{
+    font-size:100px;}
+}
+
+
+@media screen and (max-width:950px){
+
+
+
+.bg{
+    width:700px;
+    margin:-200px 0 0 250px;
+}
+}
+
+
+@media screen and (max-width:800px){
+.nav li a{
+    font-size:72px;}
+
+}
+
+
+@media screen and (max-width:600px){
+
+.header_nav{
+	height:70px;
+	width:100%;}
+
+.header_nav .logo{
+	width:15px;
+	height:auto;
+    left:25px;
+	top:20px;
+    transform:rotate(90deg);}
+
+.line{
+    display:none;}
+
+.navp{
+    display:none;}
+
+#header button{
+	right:22px;
+	border:none;
+	background:none;}
+
+.nav{
+	left:0px;
+    border:none;}
+
+.nav li a{
+    font-size:50px;}
+
+.nav li:nth-of-type(1){
+    margin-top:50px;}
+
+.nav li{
+    text-align:left;  
+    margin-left: 40px;}
+
+
+.bg{
+    margin:-200px 0 0 100px;
+}
+}
+
+
+@media screen and (max-width:500px){
+.intro{
+    margin-left:40px;
+    width:300px;}
+
+.intro p:nth-of-type(1){
+    font-size:33px;
+}
+
+.intro p:nth-of-type(2){
+    font-size:20px;
+    line-height:30px;
+}
+
+.profile{
+    width:120px;}
+
+}
+
+
+@media screen and (max-width:414px){
+.nav li a{
+    font-size:40px;}
+
+}
+
+
+@media screen and (min-width:1450px){
+.nav li{
+    margin-left:100px;}
+
+.nav li a{
+    font-size:130px;}
+}
+
